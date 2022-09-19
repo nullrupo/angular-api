@@ -9,6 +9,9 @@ import { AuthStateService } from './shared/auth-state.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
   isSignedIn!: boolean;
   constructor(
     private auth: AuthStateService,
